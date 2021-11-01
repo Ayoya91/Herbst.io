@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Formular</title>
+<link href="w1img/herbst.png" rel="icon">
+<link rel="apple-touch-icon" sizes="57x57" href="w1img/w1favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="w1img/w1favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="w1img/w1favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="w1img/w1favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="w1img/w1favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="w1img/w1favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="w1img/w1favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="w1img/w1favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="w1img/w1favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="w1img/w1favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="w1img/w1favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="w1img/w1favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="w1img/w1favicon/favicon-16x16.png">
+<link rel="manifest" href="w1img/w1favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+header, mark {
+	background-color: rgba(251,209,46,1.00);
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	font-size: 50px;
+}
+header, nav {
+	color: rgba(158,4,7,1.00);
+	text-align: center;
+}
+footer, h2 {
+	text-align: center;
+}
+#container {
+	text-align: left;
+}
+nav {
+	font-size: 20px;
+}
+img {
+	border-radius: 50%;
+	width: 200px;
+height: :130px;
+}
+strong {
+	color: rgba(48,178,36,1.00);
+}
+div {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>Formular</h1>
+	</header>
+	<nav>
+		<mark><a href="index.html">Home</a>|<a href="Sonderausgabe.html">Sonderausgabe</a>|<a href="w1formular.html">Formular</a>|<a href="w1kontakt.html">Kontakt</a></mark>
+	</nav>
+	<main>
+		<h2>Wir kümmern uns um Ihre Pflanzen</h2>
+		<div> <img src="w1img/p2.jpg" alt="img" title="rose"><img src="w1img/sb.jpg" alt="img2" title="Sonnen Blumen"><img src="w1img/p1.jpg" alt="img3" title="orkid"></div>
+		<p>möchtest du probieren?<strong>erste Testversion ist kostenlos</strong>,jetzt anmelden.</p>
+		<form action="mailscript.php" method="post">
+		<p>Email:<input type="email" name="Email" placeholder="email hinzufügen" ></p>
+		<p>Passwort:<input type="password" name="psd"></p>
+			<p>bitte auswählen Ihre Pflanze</p>
+			<select name="pflanze">
+				<option>-Bitte wählen-</option>
+				<option>Haus Pflanze</option>
+				<option>Garden Pflanze</option>
+			</select>
+			<p><input type="checkbox" name="DatenschutzGVO" value="anerkannt" required>ich erkenne die DatenschutzGVO und ich habe die Regeln einverstanden.</p>
+		<input type="submit" value="Anmelden"> <input type="reset"> 
+			</form>
+	</main>
+	<footer>&copy;Alle Rechte an micr0o0o</footer>
+</div>
+</body>
+</html>
